@@ -49,7 +49,7 @@ class App extends Component {
         <input onChange={e => this.updatePicture(e.target.value)} value={this.state.picture} />
         <span>Name:</span>
         <input onChange={e => this.updateName(e.target.value)} value={this.state.name} />
-        <button onClick={ () => this.addFriend()}>Add Friend</button>
+        <button onClick={ this.addFriend }>Add Friend</button>
         {friends}
       </div>
     );
